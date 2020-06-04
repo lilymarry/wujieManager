@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeAway">
+            <connections>
+                <outlet property="bottomHH" destination="UWQ-ce-fiI" id="ra5-6X-UT1"/>
+                <outlet property="mCollect" destination="Qn2-20-ESC" id="Fju-Y6-iw7"/>
+                <outlet property="titleView" destination="L8u-q2-CPb" id="3GG-q8-KqD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8u-q2-CPb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8wG-To-Exb"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qn2-20-ESC">
+                    <rect key="frame" x="0.0" y="50" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YN4-DT-RD5">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aur-GL-mHI"/>
+                        <outlet property="delegate" destination="-1" id="qDz-xb-EHA"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qn2-20-ESC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="5aI-Q9-1YT"/>
+                <constraint firstItem="L8u-q2-CPb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="FJj-1b-JED"/>
+                <constraint firstItem="Qn2-20-ESC" firstAttribute="top" secondItem="L8u-q2-CPb" secondAttribute="bottom" id="Ren-kf-eQs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Qn2-20-ESC" secondAttribute="bottom" constant="50" id="UWQ-ce-fiI"/>
+                <constraint firstItem="L8u-q2-CPb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iNR-y7-IMH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="L8u-q2-CPb" secondAttribute="trailing" id="wSO-ON-fGF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Qn2-20-ESC" secondAttribute="trailing" id="yBz-sB-aXd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

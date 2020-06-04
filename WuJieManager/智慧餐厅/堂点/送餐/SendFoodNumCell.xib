@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SendFoodNumCell">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpf-9h-zMT">
+                        <rect key="frame" x="348.5" y="17" width="6.5" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="LDJ-Ek-IXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-tI-lor">
+                        <rect key="frame" x="0.0" y="50" width="391" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KSm-a5-QsB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="超级大果盘(限赠3份)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiY-gB-uOy">
+                        <rect key="frame" x="8" y="17" width="133.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="w8y-gz-owz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBM-29-zAh">
+                        <rect key="frame" x="318.5" y="11.5" width="28" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="boB-hs-Mfp"/>
+                            <constraint firstAttribute="width" constant="28" id="qQG-yf-8fh"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="减号"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgh-Od-KLv">
+                        <rect key="frame" x="357" y="11.5" width="28" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="gmQ-m8-TvG"/>
+                            <constraint firstAttribute="width" constant="28" id="j5p-j8-TNX"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="加号红"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dgh-Od-KLv" firstAttribute="leading" secondItem="zpf-9h-zMT" secondAttribute="trailing" constant="2" id="4EY-ek-bQq"/>
+                <constraint firstItem="KBM-29-zAh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="EUl-QI-niY"/>
+                <constraint firstItem="jiY-gB-uOy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="PZH-L5-llH"/>
+                <constraint firstItem="zpf-9h-zMT" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="WZz-3s-1cw"/>
+                <constraint firstItem="zpf-9h-zMT" firstAttribute="leading" secondItem="KBM-29-zAh" secondAttribute="trailing" constant="2" id="akR-MY-O1x"/>
+                <constraint firstAttribute="trailing" secondItem="Dgh-Od-KLv" secondAttribute="trailing" constant="6" id="dC2-wk-cAa"/>
+                <constraint firstAttribute="trailing" secondItem="sjy-tI-lor" secondAttribute="trailing" id="dM7-Mg-EQr"/>
+                <constraint firstItem="Dgh-Od-KLv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mje-ET-KX1"/>
+                <constraint firstItem="jiY-gB-uOy" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="r8P-ZE-9HR"/>
+                <constraint firstAttribute="bottom" secondItem="sjy-tI-lor" secondAttribute="bottom" id="ykB-Tm-lcI"/>
+                <constraint firstItem="sjy-tI-lor" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zSN-1I-mLB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="391" height="51"/>
+            <point key="canvasLocation" x="405.60000000000002" y="155.17241379310346"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="减号" width="28" height="28"/>
+        <image name="加号红" width="25" height="25"/>
+    </resources>
+</document>

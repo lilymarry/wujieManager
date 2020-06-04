@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OrderFoodRightHeader">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhA-6S-pMB">
+                        <rect key="frame" x="10" y="0.0" width="201" height="29"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VV-ME-oDs">
+                        <rect key="frame" x="0.0" y="29" width="222" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Q7M-Ow-sAO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RhA-6S-pMB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="67K-AZ-ztv"/>
+                <constraint firstItem="9VV-ME-oDs" firstAttribute="top" secondItem="RhA-6S-pMB" secondAttribute="bottom" id="A8m-au-aTC"/>
+                <constraint firstAttribute="trailing" secondItem="9VV-ME-oDs" secondAttribute="trailing" id="IOa-d7-5hs"/>
+                <constraint firstAttribute="bottom" secondItem="9VV-ME-oDs" secondAttribute="bottom" id="J7G-mI-tit"/>
+                <constraint firstAttribute="trailing" secondItem="RhA-6S-pMB" secondAttribute="trailing" constant="11" id="avC-uh-eSB"/>
+                <constraint firstItem="9VV-ME-oDs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="udc-hK-uY1"/>
+                <constraint firstItem="RhA-6S-pMB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zv5-ra-vC6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="222" height="27"/>
+            <connections>
+                <outlet property="lineView" destination="9VV-ME-oDs" id="YiW-ac-9qa"/>
+                <outlet property="nameLab" destination="RhA-6S-pMB" id="8ZJ-Nz-M0K"/>
+            </connections>
+            <point key="canvasLocation" x="270.39999999999998" y="146.62668665667167"/>
+        </collectionViewCell>
+    </objects>
+</document>

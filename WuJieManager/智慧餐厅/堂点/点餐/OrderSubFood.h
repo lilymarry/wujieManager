@@ -1,0 +1,18 @@
+//
+//  OrderSubFood.h
+//  WuJieManager
+//
+//  Created by 天津沃天科技 on 2019/5/27.
+//  Copyright © 2019年 wotianshiyan. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface OrderSubFood : UIViewController
+@property(nonatomic,strong)NSString *desk_id;
+@property(nonatomic,strong)NSString *uidStr;
+@end
+
+NS_ASSUME_NONNULL_END

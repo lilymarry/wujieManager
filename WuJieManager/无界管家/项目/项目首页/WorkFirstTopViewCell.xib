@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WorkFirstTopViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="77" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="77" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="餐饮" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-k1-guS">
+                        <rect key="frame" x="18.5" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="c7g-k1-guS" secondAttribute="height" multiplier="1:1" id="DIm-bb-CEp"/>
+                            <constraint firstAttribute="width" constant="40" id="I92-b4-DMh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐饮" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBu-3y-ZvR">
+                        <rect key="frame" x="24" y="58" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="c7g-k1-guS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Btj-KB-tx5"/>
+                <constraint firstItem="CBu-3y-ZvR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lsP-N8-Lzc"/>
+                <constraint firstAttribute="bottom" secondItem="CBu-3y-ZvR" secondAttribute="bottom" constant="10" id="niJ-MW-bWO"/>
+                <constraint firstItem="c7g-k1-guS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rCv-TS-y6N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="30" height="76"/>
+            <connections>
+                <outlet property="logo" destination="c7g-k1-guS" id="Xvd-9o-jhe"/>
+                <outlet property="subTitleLab" destination="CBu-3y-ZvR" id="5yg-99-mM5"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="165.06746626686657"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="餐饮" width="27" height="27"/>
+    </resources>
+</document>

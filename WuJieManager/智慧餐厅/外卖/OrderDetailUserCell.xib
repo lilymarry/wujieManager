@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="OrderDetailUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人：王龙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W05-5Q-6CS">
+                        <rect key="frame" x="8" y="11" width="160" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="695-tO-otd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="138****1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NI4-JD-tWU">
+                        <rect key="frame" x="173" y="11" width="136" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="0uP-5C-O2h"/>
+                            <constraint firstAttribute="height" constant="15" id="obv-1Z-qXk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：天津市南开区鞍山西道电子科技中心707室" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpd-h3-OPf">
+                        <rect key="frame" x="8" y="63" width="308" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时钟" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-ri-4pd">
+                        <rect key="frame" x="8" y="37" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="RBs-Ch-8jD"/>
+                            <constraint firstAttribute="height" constant="15" id="Tvo-ix-zeG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送达时间：13:53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-dy-eQ1">
+                        <rect key="frame" x="28" y="37" width="281" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="QXF-m3-hWy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l7h-dy-eQ1" firstAttribute="top" secondItem="W05-5Q-6CS" secondAttribute="bottom" constant="11" id="1dT-xo-qKR"/>
+                    <constraint firstAttribute="trailing" secondItem="Gpd-h3-OPf" secondAttribute="trailing" constant="1" id="9Gw-CN-KOq"/>
+                    <constraint firstAttribute="trailing" secondItem="l7h-dy-eQ1" secondAttribute="trailing" constant="8" id="E6t-xN-IRC"/>
+                    <constraint firstItem="NI4-JD-tWU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="GUI-Ij-P9d"/>
+                    <constraint firstItem="NI4-JD-tWU" firstAttribute="leading" secondItem="W05-5Q-6CS" secondAttribute="trailing" constant="5" id="KUf-8I-4ZV"/>
+                    <constraint firstItem="W05-5Q-6CS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KaF-Pp-koN"/>
+                    <constraint firstAttribute="bottom" secondItem="Gpd-h3-OPf" secondAttribute="bottom" constant="1.5" id="R7o-WM-ErZ"/>
+                    <constraint firstItem="Gpd-h3-OPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="WZc-o2-YQh"/>
+                    <constraint firstItem="nJa-ri-4pd" firstAttribute="top" secondItem="W05-5Q-6CS" secondAttribute="bottom" constant="11" id="a2a-hQ-Vny"/>
+                    <constraint firstAttribute="trailing" secondItem="NI4-JD-tWU" secondAttribute="trailing" constant="8" id="b4K-8k-hau"/>
+                    <constraint firstItem="W05-5Q-6CS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="foO-cH-DiS"/>
+                    <constraint firstItem="l7h-dy-eQ1" firstAttribute="leading" secondItem="nJa-ri-4pd" secondAttribute="trailing" constant="5" id="gCx-j5-ppa"/>
+                    <constraint firstItem="nJa-ri-4pd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="pGg-hw-myC"/>
+                    <constraint firstItem="Gpd-h3-OPf" firstAttribute="top" secondItem="l7h-dy-eQ1" secondAttribute="bottom" constant="11" id="w4s-8v-W0w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="125.59999999999999" y="188.00599700149925"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="时钟" width="25" height="25"/>
+    </resources>
+</document>

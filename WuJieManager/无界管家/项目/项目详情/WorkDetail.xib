@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkDetail">
+            <connections>
+                <outlet property="mTable" destination="qms-GO-Und" id="tTg-kS-w2y"/>
+                <outlet property="sureBtn" destination="LgA-Fp-b8P" id="QNK-Ns-irL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xu-3a-5cR">
+                    <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cd-Ae-vLS">
+                            <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PR4-GP-vx8"/>
+                                <constraint firstAttribute="width" constant="86" id="vMu-Lv-2Kh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-9" minY="0.0" maxX="0.0" maxY="-26"/>
+                            <inset key="imageEdgeInsets" minX="26" minY="-14" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="视察" image="视察">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="videoList:" destination="-1" eventType="touchUpInside" id="PLS-eR-W3h"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-3W-NK1">
+                            <rect key="frame" x="87" y="0.0" width="86" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="j0s-on-nsR"/>
+                                <constraint firstAttribute="width" constant="86" id="kAR-ak-ruH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-18" minY="20" maxX="0.0" maxY="-4"/>
+                            <inset key="imageEdgeInsets" minX="29" minY="-14" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="  关注" image="关注">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" title="已关注" image="已关注"/>
+                            <connections>
+                                <action selector="guanzhuPress:" destination="-1" eventType="touchUpInside" id="rag-7r-xJB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgA-Fp-b8P">
+                            <rect key="frame" x="174" y="0.0" width="240" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MyF-Oh-7jC"/>
+                            </constraints>
+                            <state key="normal" title="立即买入">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buyPress:" destination="-1" eventType="touchUpInside" id="Mi2-BF-85l"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-ST-qyw">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="iEq-GU-9kW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LgA-Fp-b8P" secondAttribute="trailing" id="FGE-RN-2MH"/>
+                        <constraint firstAttribute="bottom" secondItem="6Cd-Ae-vLS" secondAttribute="bottom" id="IxN-Aa-mI0"/>
+                        <constraint firstItem="ZiI-ST-qyw" firstAttribute="leading" secondItem="4xu-3a-5cR" secondAttribute="leading" id="QRC-3i-BUT"/>
+                        <constraint firstAttribute="height" constant="50" id="Sri-iL-Dhk"/>
+                        <constraint firstAttribute="bottom" secondItem="LgA-Fp-b8P" secondAttribute="bottom" id="TE1-tv-rkH"/>
+                        <constraint firstItem="Yg9-3W-NK1" firstAttribute="leading" secondItem="6Cd-Ae-vLS" secondAttribute="trailing" constant="1" id="VUH-Ty-57w"/>
+                        <constraint firstItem="LgA-Fp-b8P" firstAttribute="leading" secondItem="Yg9-3W-NK1" secondAttribute="trailing" constant="1" id="W42-7B-2gV"/>
+                        <constraint firstItem="ZiI-ST-qyw" firstAttribute="top" secondItem="4xu-3a-5cR" secondAttribute="top" id="ZBD-nb-66v"/>
+                        <constraint firstAttribute="trailing" secondItem="ZiI-ST-qyw" secondAttribute="trailing" id="myp-Zk-PUF"/>
+                        <constraint firstItem="6Cd-Ae-vLS" firstAttribute="leading" secondItem="4xu-3a-5cR" secondAttribute="leading" id="npi-Za-K3z"/>
+                        <constraint firstAttribute="bottom" secondItem="Yg9-3W-NK1" secondAttribute="bottom" id="wcS-mb-Mlb"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qms-GO-Und">
+                    <rect key="frame" x="0.0" y="64" width="414" height="621"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NXT-Zl-c9v"/>
+                        <outlet property="delegate" destination="-1" id="Kue-bZ-Buw"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4xu-3a-5cR" firstAttribute="top" secondItem="qms-GO-Und" secondAttribute="bottom" constant="1" id="0Jd-AL-VJ1"/>
+                <constraint firstItem="4xu-3a-5cR" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="0UC-uV-eFE"/>
+                <constraint firstItem="qms-GO-Und" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="3Zb-Pc-ssm"/>
+                <constraint firstItem="4xu-3a-5cR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="JTA-EH-aGg"/>
+                <constraint firstItem="qms-GO-Und" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Ues-fx-Vss"/>
+                <constraint firstItem="qms-GO-Und" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bc5-BW-Caa"/>
+                <constraint firstItem="4xu-3a-5cR" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="htY-er-5PJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="133.59999999999999" y="135.38230884557723"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="关注" width="15" height="15"/>
+        <image name="已关注" width="17" height="15"/>
+        <image name="视察" width="16" height="19"/>
+    </resources>
+</document>

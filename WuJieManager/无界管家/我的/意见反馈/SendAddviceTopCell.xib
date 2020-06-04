@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="SendAddviceTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gC8-BI-LXU">
+                        <rect key="frame" x="0.0" y="0.0" width="341" height="15"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="jyW-dv-OqD"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="反馈" translatesAutoresizingMaskIntoConstraints="NO" id="peU-sm-yuG">
+                        <rect key="frame" x="145.5" y="23" width="42.5" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42.5" id="jpm-5O-fvS"/>
+                            <constraint firstAttribute="width" secondItem="peU-sm-yuG" secondAttribute="height" multiplier="1:1" id="wA7-8j-chO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的反馈意见是“无界掌柜”成长的滋养!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdM-jK-5aS">
+                        <rect key="frame" x="47" y="75.5" width="247" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-GU-cSK">
+                        <rect key="frame" x="0.0" y="100.5" width="341" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择反馈问题的类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL8-bZ-2LL">
+                                <rect key="frame" x="8" y="14" width="143" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="9p6-Kh-CRP"/>
+                            <constraint firstItem="kL8-bZ-2LL" firstAttribute="leading" secondItem="QyC-GU-cSK" secondAttribute="leadingMargin" id="F4P-j8-Pwm"/>
+                            <constraint firstItem="kL8-bZ-2LL" firstAttribute="top" secondItem="QyC-GU-cSK" secondAttribute="top" constant="14" id="NaJ-92-CFJ"/>
+                            <constraint firstItem="kL8-bZ-2LL" firstAttribute="centerY" secondItem="QyC-GU-cSK" secondAttribute="centerY" id="SEq-Hy-Xl4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="centerX" secondItem="peU-sm-yuG" secondAttribute="centerX" constant="3.75" id="FPR-p0-h9D"/>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="trailing" secondItem="QyC-GU-cSK" secondAttribute="trailing" id="Hqi-zd-mPp"/>
+                    <constraint firstAttribute="bottom" secondItem="QyC-GU-cSK" secondAttribute="bottom" id="KDG-0c-vRi"/>
+                    <constraint firstItem="peU-sm-yuG" firstAttribute="centerX" secondItem="rdM-jK-5aS" secondAttribute="centerX" constant="-3.75" id="gfX-5I-lfh"/>
+                    <constraint firstItem="QyC-GU-cSK" firstAttribute="top" secondItem="rdM-jK-5aS" secondAttribute="bottom" constant="8" symbolic="YES" id="iA6-un-54K"/>
+                    <constraint firstItem="peU-sm-yuG" firstAttribute="top" secondItem="gC8-BI-LXU" secondAttribute="bottom" constant="8" symbolic="YES" id="m5r-qQ-5Km"/>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="leading" secondItem="QyC-GU-cSK" secondAttribute="leading" id="quQ-RE-xw5"/>
+                    <constraint firstItem="rdM-jK-5aS" firstAttribute="top" secondItem="peU-sm-yuG" secondAttribute="bottom" constant="10" id="s6L-kI-PLG"/>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u7c-hm-Xxn"/>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uUa-Cs-6LO"/>
+                    <constraint firstItem="gC8-BI-LXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xwB-j7-M41"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="149.59999999999999" y="200.14992503748127"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="反馈" width="33" height="33"/>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OrderFoodAttributeAddCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="47"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVp-s9-ONh">
+                        <rect key="frame" x="0.0" y="46" width="354" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rFQ-LR-dh6"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0o-Xt-FWw">
+                        <rect key="frame" x="274" y="15" width="30" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Srk-VR-pbh"/>
+                            <constraint firstAttribute="width" constant="30" id="xHf-yY-MFC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGd-Tb-eb9" customClass="OrderFoodRightBtn">
+                        <rect key="frame" x="238" y="9.5" width="28" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="9gi-ep-dFA"/>
+                            <constraint firstAttribute="width" constant="28" id="BrK-M4-f8c"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="减号"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="超级大果盘(限赠3份)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdS-ee-ryI">
+                        <rect key="frame" x="20" y="15" width="198" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="fEa-dH-YfC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIw-kl-0b2" customClass="OrderFoodRightBtn">
+                        <rect key="frame" x="315" y="9.5" width="28" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="QpF-9Q-rze"/>
+                            <constraint firstAttribute="width" constant="28" id="b7i-gY-Wst"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="加号红"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="A0o-Xt-FWw" firstAttribute="leading" secondItem="VGd-Tb-eb9" secondAttribute="trailing" constant="8" id="3RU-Cr-sqY"/>
+                <constraint firstItem="A0o-Xt-FWw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Fvk-5U-8HQ"/>
+                <constraint firstItem="rIw-kl-0b2" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="VVr-wW-c84"/>
+                <constraint firstItem="VGd-Tb-eb9" firstAttribute="leading" secondItem="PdS-ee-ryI" secondAttribute="trailing" constant="20" id="YVK-Pb-FWl"/>
+                <constraint firstAttribute="bottom" secondItem="iVp-s9-ONh" secondAttribute="bottom" id="dB5-TF-enR"/>
+                <constraint firstItem="rIw-kl-0b2" firstAttribute="leading" secondItem="A0o-Xt-FWw" secondAttribute="trailing" constant="11" id="dJ2-au-rJK"/>
+                <constraint firstItem="iVp-s9-ONh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eHx-GB-C9v"/>
+                <constraint firstItem="PdS-ee-ryI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gD4-lZ-onS"/>
+                <constraint firstItem="A0o-Xt-FWw" firstAttribute="leading" secondItem="VGd-Tb-eb9" secondAttribute="trailing" constant="8" id="p4F-9l-GxF"/>
+                <constraint firstItem="PdS-ee-ryI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pjI-Hn-fmp"/>
+                <constraint firstAttribute="trailing" secondItem="rIw-kl-0b2" secondAttribute="trailing" constant="11" id="unP-bJ-NWQ"/>
+                <constraint firstAttribute="trailing" secondItem="iVp-s9-ONh" secondAttribute="trailing" id="vTb-Pc-C4Q"/>
+                <constraint firstItem="VGd-Tb-eb9" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="wkS-OJ-skH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="354" height="47"/>
+            <connections>
+                <outlet property="addBtn" destination="rIw-kl-0b2" id="bKm-BI-lyC"/>
+                <outlet property="nameLab" destination="PdS-ee-ryI" id="7Jj-W1-vmu"/>
+                <outlet property="numLab" destination="A0o-Xt-FWw" id="FG5-5w-2Dk"/>
+                <outlet property="reduceBtn" destination="VGd-Tb-eb9" id="wv1-fq-fWI"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="152.47376311844079"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="减号" width="28" height="28"/>
+        <image name="加号红" width="25" height="25"/>
+    </resources>
+</document>

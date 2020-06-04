@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XieyiDetail">
+            <connections>
+                <outlet property="qianZiView" destination="93h-Dn-mF7" id="dpE-WW-xkE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDr-Mh-Doe">
+                    <rect key="frame" x="0.0" y="64" width="320" height="400"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="QPy-w6-D2O"/>
+                    </constraints>
+                    <string key="text">     协议书有广义和狭义之分。广义的协议书是指社会集团或个人处理各种社会关系、事务时常用的“契约”类文书，包括合同、议定书、条约、公约、联合宣言、联合声明、条据等。狭义的协议书指国家、政党、企业、团体或个人就某个问题经过谈判或共同协商，取得一致意见后，订立的一种具有经济或其它关系的契约性文书。协议书是应用写作的重要组成部分。
+     协议书是社会生活中，协作的双方或数方，为保障各自的合法权益，经双方或数方共同协商达成一致意见后，签订的书面材料。协议书是契约文书的一种。是当事人双方（或多方）为了解决或预防纠纷，或确立某种法律关系，实现一定的共同利益、愿望，经过协商而达成一致后，签署的具有法律效力的记录性应用文。                                 
+     协议书有广义和狭义之分。广义的协议书是指社会集团或个人处理各种社会关系、事务时常用的“契约”类文书，包括合同、议定书、条约、公约、联合宣言、联合声明、条据等。狭义的协议书指国家、政党、企业、团体或个人就某个问题经过谈判或共同协商，取得一致意见后，订立的一种具有经济或其它关系的契约性文书。协议书是应用写作的重要组成部分。
+     协议书是社会生活中，协作的双方或数方，为保障各自的合法权益，经双方或数方共同协商达成一致意见后，签订的书面材料。协议书是契约文书的一种。是当事人双方（或多方）为了解决或预防纠纷，或确立某种法律关系，实现一定的共同利益、愿望，经过协商而达成一致后，签署的具有法律效力的记录性应用文。 </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mj-68-tpw">
+                    <rect key="frame" x="111" y="472" width="193" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签字人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygz-sb-nw4">
+                            <rect key="frame" x="0.0" y="18" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="hys-IX-NnB"/>
+                                <constraint firstAttribute="height" constant="21" id="usS-zr-nNQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="93h-Dn-mF7">
+                            <rect key="frame" x="74" y="4" width="115" height="48"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABC-d2-udx">
+                            <rect key="frame" x="0.0" y="0.0" width="193" height="56"/>
+                            <connections>
+                                <action selector="qianZiPress:" destination="-1" eventType="touchUpInside" id="aGo-22-Ou2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ygz-sb-nw4" firstAttribute="top" secondItem="4mj-68-tpw" secondAttribute="top" constant="18" id="1C6-di-TeQ"/>
+                        <constraint firstAttribute="height" constant="56" id="5sg-MA-NYM"/>
+                        <constraint firstItem="93h-Dn-mF7" firstAttribute="leading" secondItem="Ygz-sb-nw4" secondAttribute="trailing" constant="4" id="F5W-uh-efv"/>
+                        <constraint firstItem="93h-Dn-mF7" firstAttribute="top" secondItem="4mj-68-tpw" secondAttribute="top" constant="4" id="JKN-wV-Fuc"/>
+                        <constraint firstAttribute="bottom" secondItem="ABC-d2-udx" secondAttribute="bottom" id="QO9-s8-ksT"/>
+                        <constraint firstAttribute="trailing" secondItem="93h-Dn-mF7" secondAttribute="trailing" constant="4" id="Qa4-mE-bN6"/>
+                        <constraint firstAttribute="bottom" secondItem="93h-Dn-mF7" secondAttribute="bottom" constant="4" id="Xlh-of-HFu"/>
+                        <constraint firstItem="ABC-d2-udx" firstAttribute="top" secondItem="4mj-68-tpw" secondAttribute="top" id="bjM-nc-3r7"/>
+                        <constraint firstItem="Ygz-sb-nw4" firstAttribute="leading" secondItem="4mj-68-tpw" secondAttribute="leading" id="gMR-CC-Psj"/>
+                        <constraint firstAttribute="trailing" secondItem="ABC-d2-udx" secondAttribute="trailing" id="p8M-jA-MSC"/>
+                        <constraint firstAttribute="width" constant="193" id="q7x-WI-osW"/>
+                        <constraint firstItem="ABC-d2-udx" firstAttribute="leading" secondItem="4mj-68-tpw" secondAttribute="leading" id="x9g-xU-57q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YDr-Mh-Doe" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="6lq-ky-74c"/>
+                <constraint firstItem="4mj-68-tpw" firstAttribute="top" secondItem="YDr-Mh-Doe" secondAttribute="bottom" constant="8" id="bfs-De-4bJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4mj-68-tpw" secondAttribute="trailing" constant="16" id="cNc-Yp-t31"/>
+                <constraint firstItem="YDr-Mh-Doe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="fea-FY-cdg"/>
+                <constraint firstItem="YDr-Mh-Doe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="zA4-Ov-nsP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>
